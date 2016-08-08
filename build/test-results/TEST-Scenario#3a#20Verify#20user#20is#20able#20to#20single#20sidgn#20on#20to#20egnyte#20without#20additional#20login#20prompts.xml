@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Verify user is able to single sidgn on to egnyte without additional login prompts" tests="6" skipped="0" failures="2" errors="0" timestamp="2016-08-08T06:33:01" hostname="in-satheesh.local" time="1.136">
+  <properties/>
+  <testcase name="Given I open msp catalyst okta login page" classname="Scenario: Verify user is able to single sidgn on to egnyte without additional login prompts" time="0.0"/>
+  <testcase name="When I enter okta username as &quot;thivyae@thoughtworks.com&quot;" classname="Scenario: Verify user is able to single sidgn on to egnyte without additional login prompts" time="0.0"/>
+  <testcase name="And I enter okta password as &quot;Test123!@#&quot;" classname="Scenario: Verify user is able to single sidgn on to egnyte without additional login prompts" time="0.0"/>
+  <testcase name="And I click on SignIn button" classname="Scenario: Verify user is able to single sidgn on to egnyte without additional login prompts" time="0.0"/>
+  <testcase name="Then I should be taken to msp catalyst home page" classname="Scenario: Verify user is able to single sidgn on to egnyte without additional login prompts" time="0.002">
+    <failure message="org.junit.ComparisonFailure: expected:&lt;&quot;[Recipes]&quot;&gt; but was:&lt;&quot;[Stringeerw]&quot;&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;&quot;[Recipes]&quot;&gt; but was:&lt;&quot;[Stringeerw]&quot;&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at pages.HomePage.verifyPageTitle(HomePage.java:29)
+	at stepDefinitions.EgnyteStepDefinitions.iShouldBeTakenToMspCatalystHomePage(EgnyteStepDefinitions.java:41)
+	at ✽.Then I should be taken to msp catalyst home page(features/EgnyteLogin.feature:8)
+</failure>
+  </testcase>
+  <testcase name="classMethod" classname="Scenario: Verify user is able to single sidgn on to egnyte without additional login prompts" time="8.765">
+    <failure message="org.junit.ComparisonFailure: expected:&lt;&quot;[Recipes]&quot;&gt; but was:&lt;&quot;[Stringeerw]&quot;&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;&quot;[Recipes]&quot;&gt; but was:&lt;&quot;[Stringeerw]&quot;&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at pages.HomePage.verifyPageTitle(HomePage.java:29)
+	at stepDefinitions.EgnyteStepDefinitions.iShouldBeTakenToMspCatalystHomePage(EgnyteStepDefinitions.java:41)
+	at ✽.Then I should be taken to msp catalyst home page(features/EgnyteLogin.feature:8)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 2.22.397929 (fb72fb249a903a0b1041ea71eb4c8b3fa0d9be5a) on port 6003
+Only local connections are allowed.
+]]></system-err>
+</testsuite>
