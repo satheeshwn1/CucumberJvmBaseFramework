@@ -1,0 +1,35 @@
+plugins {
+    id "com.github.samueltbrown.cucumber" version "0.9"
+}
+
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+project.ext {
+    cucumberVersion = '1.2.4'
+    junitVersion = '4.12'
+    seleniumVersion = '2.53.0'
+    assertJVersion = '3.5.2'
+}
+
+dependencies {
+    testCompile 'info.cukes:cucumber-java:' + cucumberVersion
+    testCompile 'info.cukes:cucumber-junit:' + cucumberVersion
+    testCompile 'org.assertj:assertj-core:'+ assertJVersion
+    testCompile 'junit:junit:' + junitVersion
+    testCompile 'org.seleniumhq.selenium:selenium-java:' + seleniumVersion
+
+}
+
+test {
+    testLogging.showStandardStreams = true
+    systemProperties System.getProperties()
+}
